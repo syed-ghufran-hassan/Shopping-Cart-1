@@ -37,10 +37,10 @@ src
 4. Run the development server: `npm run dev`
 5. Open your browser and visit `http://localhost:5173`
 
-## License
+## Screenshots
+<img width="2560" height="3104" alt="shopping-cart-xi-three-20 vercel app_(Nest Hub Max)" src="https://github.com/user-attachments/assets/1edda20b-01d7-4aae-b237-d394178478d1" />
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<img width="2560" height="1600" alt="shopping-cart-xi-three-20 vercel app_(Nest Hub Max) (1)" src="https://github.com/user-attachments/assets/8ebf65fb-88ff-4a96-8940-831059f1d6b5" />
 
----
 
 Made with ❤️ by [Ayeza Bashir](https://ayeza-bashir-portfolio.vercel.app/)
