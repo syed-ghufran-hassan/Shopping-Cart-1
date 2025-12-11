@@ -24,19 +24,22 @@ const cartSlice = createSlice({
       const indexProductId = state.items.findIndex(
         (item) => item.productId === productId
       );
+
+      if (indexProductId === -1) {
+    // Product not in cart — nothing to do  
+    return;
+  }
+      
       if (quantity > 0) {
         state.items[indexProductId].quantity = quantity;
       } else {
-        state.items = (state.items).filter(item => item.productId !== productId);
+        state.items.splice(indexProductId, 1);
+        //state.items = (state.items).filter(item => item.productId !== productId);
       }
       localStorage.setItem("carts", JSON.stringify(state.items));
     },
-    toggleStatusTab(state){
-      if(state.statusTab===false){
-        state.statusTab = true
-      }else{
-        state.statusTab = false
-      }
+    toggleStatusTab(state) {
+      state.statusTab = !state.statusTab; // More concise than if/else
     }
   },
 });
